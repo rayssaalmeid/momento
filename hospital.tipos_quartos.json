@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "68e4454dbd84f1fe22e00534"
+  },
+  "id": "TQU01",
+  "tipo": "apartamento",
+  "valor_diaria": 850
+},
+{
+  "_id": {
+    "$oid": "68e4454dbd84f1fe22e00535"
+  },
+  "id": "TQU02",
+  "tipo": "quartos_duplos",
+  "valor_diaria": 550
+},
+{
+  "_id": {
+    "$oid": "68e4454dbd84f1fe22e00536"
+  },
+  "id": "TQU03",
+  "tipo": "enfermaria",
+  "valor_diaria": 300
+}]
