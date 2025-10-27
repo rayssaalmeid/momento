@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "68e444f5bd84f1fe22e004ec"
+  },
+  "id": "CON01",
+  "nome": "Saúde Plus",
+  "cnpj": "12.345.678/0001-90",
+  "tempo_carencia_dias": 90
+},
+{
+  "_id": {
+    "$oid": "68e444f5bd84f1fe22e004ed"
+  },
+  "id": "CON02",
+  "nome": "Bem Estar Total",
+  "cnpj": "98.765.432/0001-11",
+  "tempo_carencia_dias": 180
+},
+{
+  "_id": {
+    "$oid": "68e444f5bd84f1fe22e004ee"
+  },
+  "id": "CON03",
+  "nome": "Vitalis",
+  "cnpj": "45.678.901/0001-22",
+  "tempo_carencia_dias": 60
+}]
