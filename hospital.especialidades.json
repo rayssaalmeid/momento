@@ -1,0 +1,56 @@
+[{
+  "_id": {
+    "$oid": "68e44504bd84f1fe22e004fb"
+  },
+  "id": "ESP01",
+  "nome": "pediatra"
+},
+{
+  "_id": {
+    "$oid": "68e44504bd84f1fe22e004fc"
+  },
+  "id": "ESP02",
+  "nome": "clinica geral"
+},
+{
+  "_id": {
+    "$oid": "68e44504bd84f1fe22e004fd"
+  },
+  "id": "ESP03",
+  "nome": "gastroenterologia"
+},
+{
+  "_id": {
+    "$oid": "68e44504bd84f1fe22e004fe"
+  },
+  "id": "ESP04",
+  "nome": "dermatologia"
+},
+{
+  "_id": {
+    "$oid": "68e44504bd84f1fe22e004ff"
+  },
+  "id": "ESP05",
+  "nome": "cardiologia"
+},
+{
+  "_id": {
+    "$oid": "68e44504bd84f1fe22e00500"
+  },
+  "id": "ESP06",
+  "nome": "ortopedia"
+},
+{
+  "_id": {
+    "$oid": "68e44504bd84f1fe22e00501"
+  },
+  "id": "ESP07",
+  "nome": "neurologia"
+},
+{
+  "_id": {
+    "$oid": "68e44504bd84f1fe22e00502"
+  },
+  "id": "ESP08",
+  "nome": "oftalmologia"
+}]
