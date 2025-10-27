@@ -1,0 +1,152 @@
+[{
+  "_id": {
+    "$oid": "68e4450cbd84f1fe22e00504"
+  },
+  "id": "I01",
+  "quarto_id": "Q01",
+  "paciente_id": "P01",
+  "medico_id": "M05",
+  "enfermeiros_ids": [
+    "E01",
+    "E02"
+  ],
+  "data_entrada": {
+    "$date": "2015-05-10T00:00:00.000Z"
+  },
+  "data_prevista_alta": {
+    "$date": "2015-05-15T00:00:00.000Z"
+  },
+  "data_efetiva_alta": {
+    "$date": "2015-05-14T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e4450cbd84f1fe22e00505"
+  },
+  "id": "I02",
+  "quarto_id": "Q03",
+  "paciente_id": "P03",
+  "medico_id": "M03",
+  "enfermeiros_ids": [
+    "E03",
+    "E04"
+  ],
+  "data_entrada": {
+    "$date": "2016-11-20T00:00:00.000Z"
+  },
+  "data_prevista_alta": {
+    "$date": "2016-11-30T00:00:00.000Z"
+  },
+  "data_efetiva_alta": {
+    "$date": "2016-11-30T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e4450cbd84f1fe22e00506"
+  },
+  "id": "I03",
+  "quarto_id": "Q03",
+  "paciente_id": "P07",
+  "medico_id": "M06",
+  "enfermeiros_ids": [
+    "E05",
+    "E06"
+  ],
+  "data_entrada": {
+    "$date": "2018-01-05T00:00:00.000Z"
+  },
+  "data_prevista_alta": {
+    "$date": "2018-01-15T00:00:00.000Z"
+  },
+  "data_efetiva_alta": {
+    "$date": "2018-01-18T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e4450cbd84f1fe22e00507"
+  },
+  "id": "I04",
+  "quarto_id": "Q01",
+  "paciente_id": "P08",
+  "medico_id": "M02",
+  "enfermeiros_ids": [
+    "E07",
+    "E08"
+  ],
+  "data_entrada": {
+    "$date": "2019-03-25T00:00:00.000Z"
+  },
+  "data_prevista_alta": {
+    "$date": "2019-03-28T00:00:00.000Z"
+  },
+  "data_efetiva_alta": {
+    "$date": "2019-03-28T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e4450cbd84f1fe22e00508"
+  },
+  "id": "I05",
+  "quarto_id": "Q02",
+  "paciente_id": "P10",
+  "medico_id": "M01",
+  "enfermeiros_ids": [
+    "E09",
+    "E10"
+  ],
+  "data_entrada": {
+    "$date": "2020-09-01T00:00:00.000Z"
+  },
+  "data_prevista_alta": {
+    "$date": "2020-09-07T00:00:00.000Z"
+  },
+  "data_efetiva_alta": {
+    "$date": "2020-09-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e4450cbd84f1fe22e00509"
+  },
+  "id": "I06",
+  "quarto_id": "Q03",
+  "paciente_id": "P01",
+  "medico_id": "M05",
+  "enfermeiros_ids": [
+    "E01",
+    "E03"
+  ],
+  "data_entrada": {
+    "$date": "2021-04-12T00:00:00.000Z"
+  },
+  "data_prevista_alta": {
+    "$date": "2021-04-16T00:00:00.000Z"
+  },
+  "data_efetiva_alta": null
+},
+{
+  "_id": {
+    "$oid": "68e4450cbd84f1fe22e0050a"
+  },
+  "id": "I07",
+  "quarto_id": "Q01",
+  "paciente_id": "P03",
+  "medico_id": "M02",
+  "enfermeiros_ids": [
+    "E04",
+    "E05"
+  ],
+  "data_entrada": {
+    "$date": "2021-12-01T00:00:00.000Z"
+  },
+  "data_prevista_alta": {
+    "$date": "2021-12-05T00:00:00.000Z"
+  },
+  "data_efetiva_alta": {
+    "$date": "2021-12-05T00:00:00.000Z"
+  }
+}]
