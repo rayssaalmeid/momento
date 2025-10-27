@@ -1,0 +1,17 @@
+[{
+  "_id": {
+    "$oid": "68e44546bd84f1fe22e00530"
+  },
+  "id": "Q01",
+  "tipo_id": "TQU01",
+  "nome": "Apartamento Master 101"
+},
+{
+  "_id": {
+    "$oid": "68e44546bd84f1fe22e00531"
+  },
+  "id": "Q02",
+  "tipo_id": "TQU02",
+  "nome": "Quarto Duplo 205"
+},
+{
