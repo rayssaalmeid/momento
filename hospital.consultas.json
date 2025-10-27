@@ -1,0 +1,364 @@
+[{
+  "_id": {
+    "$oid": "68e44432bd84f1fe22e004d7"
+  },
+  "id": "C01",
+  "paciente_id": "P01",
+  "medico_id": "M05",
+  "data_hora": {
+    "$date": "2015-03-20T10:00:00.000Z"
+  },
+  "diagnostico": "Angina estável, revisão",
+  "receituario": {
+    "medicamentos": [
+      "Atenolol 25mg",
+      "AAS 100mg"
+    ]
+  },
+  "valor": 402.02,
+  "convenio_id": "CON01"
+},
+{
+  "_id": {
+    "$oid": "68e44432bd84f1fe22e004d8"
+  },
+  "id": "C02",
+  "paciente_id": "P02",
+  "medico_id": "M01",
+  "data_hora": {
+    "$date": "2015-10-01T14:30:00.000Z"
+  },
+  "diagnostico": "Infecção de garganta",
+  "receituario": {
+    "medicamentos": [
+      "Amoxicilina 500mg"
+    ]
+  },
+  "valor": 424.18,
+  "convenio_id": null
+},
+{
+  "_id": {
+    "$oid": "68e44432bd84f1fe22e004d9"
+  },
+  "id": "C03",
+  "paciente_id": "P03",
+  "medico_id": "M03",
+  "data_hora": {
+    "$date": "2016-01-15T09:00:00.000Z"
+  },
+  "diagnostico": "Investigação de dor abdominal crônica",
+  "receituario": null,
+  "valor": 275.83,
+  "convenio_id": null
+},
+{
+  "_id": {
+    "$oid": "68e44432bd84f1fe22e004da"
+  },
+  "id": "C04",
+  "paciente_id": "P04",
+  "medico_id": "M04",
+  "data_hora": {
+    "$date": "2016-08-01T11:30:00.000Z"
+  },
+  "diagnostico": "Dermatite atópica",
+  "receituario": {
+    "medicamentos": [
+      "Creme Hidratante",
+      "Pomada de Corticoide"
+    ]
+  },
+  "valor": 244.2,
+  "convenio_id": "CON01"
+},
+{
+  "_id": {
+    "$oid": "68e44432bd84f1fe22e004db"
+  },
+  "id": "C05",
+  "paciente_id": "P05",
+  "medico_id": "M06",
+  "data_hora": {
+    "$date": "2017-02-10T16:00:00.000Z"
+  },
+  "diagnostico": "Contusão no joelho",
+  "receituario": {
+    "medicamentos": [
+      "Paracetamol",
+      "Diclofenaco"
+    ]
+  },
+  "valor": 308.89,
+  "convenio_id": null
+},
+{
+  "_id": {
+    "$oid": "68e44432bd84f1fe22e004dc"
+  },
+  "id": "C06",
+  "paciente_id": "P06",
+  "medico_id": "M07",
+  "data_hora": {
+    "$date": "2017-07-25T13:45:00.000Z"
+  },
+  "diagnostico": "Cefaleia tensional",
+  "receituario": null,
+  "valor": 356.83,
+  "convenio_id": "CON01"
+},
+{
+  "_id": {
+    "$oid": "68e44432bd84f1fe22e004dd"
+  },
+  "id": "C07",
+  "paciente_id": "P07",
+  "medico_id": "M08",
+  "data_hora": {
+    "$date": "2018-05-18T08:30:00.000Z"
+  },
+  "diagnostico": "Avaliação oftalmológica de rotina",
+  "receituario": null,
+  "valor": 234.09,
+  "convenio_id": null
+},
+{
+  "_id": {
+    "$oid": "68e44432bd84f1fe22e004de"
+  },
+  "id": "C08",
+  "paciente_id": "P09",
+  "medico_id": "M10",
+  "data_hora": {
+    "$date": "2018-11-05T15:15:00.000Z"
+  },
+  "diagnostico": "Gripe forte",
+  "receituario": {
+    "medicamentos": [
+      "Dipirona",
+      "Descongestionante Nasal"
+    ]
+  },
+  "valor": 371.68,
+  "convenio_id": null
+},
+{
+  "_id": {
+    "$oid": "68e44432bd84f1fe22e004df"
+  },
+  "id": "C09",
+  "paciente_id": "P10",
+  "medico_id": "M02",
+  "data_hora": {
+    "$date": "2019-01-22T10:30:00.000Z"
+  },
+  "diagnostico": "Check-up anual",
+  "receituario": null,
+  "valor": 191.36,
+  "convenio_id": null
+},
+{
+  "_id": {
+    "$oid": "68e44432bd84f1fe22e004e0"
+  },
+  "id": "C10",
+  "paciente_id": "P11",
+  "medico_id": "M11",
+  "data_hora": {
+    "$date": "2019-06-03T14:00:00.000Z"
+  },
+  "diagnostico": "Gastrite aguda",
+  "receituario": {
+    "medicamentos": [
+      "Omeprazol 20mg",
+      "Domperidona"
+    ]
+  },
+  "valor": 155.63,
+  "convenio_id": null
+},
+{
+  "_id": {
+    "$oid": "68e44432bd84f1fe22e004e1"
+  },
+  "id": "C11",
+  "paciente_id": "P12",
+  "medico_id": "M12",
+  "data_hora": {
+    "$date": "2019-10-10T11:00:00.000Z"
+  },
+  "diagnostico": "Acne persistente",
+  "receituario": {
+    "medicamentos": [
+      "Tretinoína em gel",
+      "Doxiciclina"
+    ]
+  },
+  "valor": 333.46,
+  "convenio_id": "CON01"
+},
+{
+  "_id": {
+    "$oid": "68e44432bd84f1fe22e004e2"
+  },
+  "id": "C12",
+  "paciente_id": "P13",
+  "medico_id": "M09",
+  "data_hora": {
+    "$date": "2020-03-05T09:30:00.000Z"
+  },
+  "diagnostico": "Tosse seca",
+  "receituario": {
+    "medicamentos": [
+      "Xarope antitussígeno",
+      "Claritromicina"
+    ]
+  },
+  "valor": 408.01,
+  "convenio_id": "CON02"
+},
+{
+  "_id": {
+    "$oid": "68e44432bd84f1fe22e004e3"
+  },
+  "id": "C13",
+  "paciente_id": "P14",
+  "medico_id": "M05",
+  "data_hora": {
+    "$date": "2020-08-14T16:45:00.000Z"
+  },
+  "diagnostico": "Arritmia leve",
+  "receituario": {
+    "medicamentos": [
+      "Propafenona",
+      "Potássio Suplementar"
+    ]
+  },
+  "valor": 357.26,
+  "convenio_id": "CON03"
+},
+{
+  "_id": {
+    "$oid": "68e44432bd84f1fe22e004e4"
+  },
+  "id": "C14",
+  "paciente_id": "P15",
+  "medico_id": "M03",
+  "data_hora": {
+    "$date": "2020-11-20T13:00:00.000Z"
+  },
+  "diagnostico": "Azia frequente",
+  "receituario": {
+    "medicamentos": [
+      "Pantoprazol",
+      "Hidróxido de Alumínio"
+    ]
+  },
+  "valor": 226.64,
+  "convenio_id": "CON01"
+},
+{
+  "_id": {
+    "$oid": "68e44432bd84f1fe22e004e5"
+  },
+  "id": "C15",
+  "paciente_id": "P01",
+  "medico_id": "M05",
+  "data_hora": {
+    "$date": "2021-01-08T09:00:00.000Z"
+  },
+  "diagnostico": "Revisão cardiológica",
+  "receituario": null,
+  "valor": 149.34,
+  "convenio_id": "CON01"
+},
+{
+  "_id": {
+    "$oid": "68e44432bd84f1fe22e004e6"
+  },
+  "id": "C16",
+  "paciente_id": "P04",
+  "medico_id": "M02",
+  "data_hora": {
+    "$date": "2021-05-15T15:00:00.000Z"
+  },
+  "diagnostico": "Febre e dor no corpo",
+  "receituario": {
+    "medicamentos": [
+      "Ibuprofeno 400mg",
+      "Vitamina C"
+    ]
+  },
+  "valor": 384.32,
+  "convenio_id": null
+},
+{
+  "_id": {
+    "$oid": "68e44432bd84f1fe22e004e7"
+  },
+  "id": "C17",
+  "paciente_id": "P09",
+  "medico_id": "M01",
+  "data_hora": {
+    "$date": "2021-09-01T10:00:00.000Z"
+  },
+  "diagnostico": "Vacinação de rotina (Infantil)",
+  "receituario": null,
+  "valor": 290.79,
+  "convenio_id": null
+},
+{
+  "_id": {
+    "$oid": "68e44432bd84f1fe22e004e8"
+  },
+  "id": "C18",
+  "paciente_id": "P03",
+  "medico_id": "M02",
+  "data_hora": {
+    "$date": "2021-11-25T11:45:00.000Z"
+  },
+  "diagnostico": "Dor de cabeça persistente",
+  "receituario": {
+    "medicamentos": [
+      "Buscopan Composto",
+      "Dorflex"
+    ]
+  },
+  "valor": 463.96,
+  "convenio_id": "CON01"
+},
+{
+  "_id": {
+    "$oid": "68e44432bd84f1fe22e004e9"
+  },
+  "id": "C19",
+  "paciente_id": "P04",
+  "medico_id": "M04",
+  "data_hora": {
+    "$date": "2021-12-10T14:00:00.000Z"
+  },
+  "diagnostico": "Nova lesão de pele",
+  "receituario": {
+    "medicamentos": [
+      "Fluocinolona creme",
+      "Anti-histamínico"
+    ]
+  },
+  "valor": 318.87,
+  "convenio_id": null
+},
+{
+  "_id": {
+    "$oid": "68e44432bd84f1fe22e004ea"
+  },
+  "id": "C20",
+  "paciente_id": "P13",
+  "medico_id": "M09",
+  "data_hora": {
+    "$date": "2022-01-01T12:00:00.000Z"
+  },
+  "diagnostico": "Liberação de atestado médico",
+  "receituario": null,
+  "valor": 235.91,
+  "convenio_id": null
+}]
