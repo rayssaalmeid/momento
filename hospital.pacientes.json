@@ -1,0 +1,218 @@
+[{
+  "_id": {
+    "$oid": "68e44539bd84f1fe22e0051e"
+  },
+  "id": "P01",
+  "nome": "Rafael",
+  "sobrenome": "Gomes",
+  "data_nascimento": {
+    "$date": "1998-03-01T00:00:00.000Z"
+  },
+  "rg": "11.111.111-1",
+  "cpf": "111.222.333-44",
+  "convenio_id": "CON01"
+},
+{
+  "_id": {
+    "$oid": "68e44539bd84f1fe22e0051f"
+  },
+  "id": "P02",
+  "nome": "Sofia",
+  "sobrenome": "Ramos",
+  "data_nascimento": {
+    "$date": "2010-10-15T00:00:00.000Z"
+  },
+  "rg": "22.222.222-2",
+  "cpf": "222.333.444-55",
+  "convenio_id": "CON02"
+},
+{
+  "_id": {
+    "$oid": "68e44539bd84f1fe22e00520"
+  },
+  "id": "P03",
+  "nome": "Guilherme",
+  "sobrenome": "Castro",
+  "data_nascimento": {
+    "$date": {
+      "$numberLong": "-469929600000"
+    }
+  },
+  "rg": "33.333.333-3",
+  "cpf": "333.444.555-66",
+  "convenio_id": "CON03"
+},
+{
+  "_id": {
+    "$oid": "68e44539bd84f1fe22e00521"
+  },
+  "id": "P04",
+  "nome": "Helena",
+  "sobrenome": "Dias",
+  "data_nascimento": {
+    "$date": "1987-06-12T00:00:00.000Z"
+  },
+  "rg": "44.444.444-4",
+  "cpf": "444.555.666-77",
+  "convenio_id": "CON01"
+},
+{
+  "_id": {
+    "$oid": "68e44539bd84f1fe22e00522"
+  },
+  "id": "P05",
+  "nome": "Victor",
+  "sobrenome": "Barbosa",
+  "data_nascimento": {
+    "$date": "2005-09-28T00:00:00.000Z"
+  },
+  "rg": "55.555.555-5",
+  "cpf": "555.666.777-88",
+  "convenio_id": "CON02"
+},
+{
+  "_id": {
+    "$oid": "68e44539bd84f1fe22e00523"
+  },
+  "id": "P06",
+  "nome": "Larissa",
+  "sobrenome": "Nascimento",
+  "data_nascimento": {
+    "$date": "1973-04-05T00:00:00.000Z"
+  },
+  "rg": "66.666.666-6",
+  "cpf": "666.777.888-99",
+  "convenio_id": "CON03"
+},
+{
+  "_id": {
+    "$oid": "68e44539bd84f1fe22e00524"
+  },
+  "id": "P07",
+  "nome": "Murilo",
+  "sobrenome": "Pinto",
+  "data_nascimento": {
+    "$date": {
+      "$numberLong": "-10540800000"
+    }
+  },
+  "rg": "77.777.777-7",
+  "cpf": "777.888.999-00",
+  "convenio_id": "CON01"
+},
+{
+  "_id": {
+    "$oid": "68e44539bd84f1fe22e00525"
+  },
+  "id": "P08",
+  "nome": "Natália",
+  "sobrenome": "Correia",
+  "data_nascimento": {
+    "$date": "1994-02-14T00:00:00.000Z"
+  },
+  "rg": "88.888.888-8",
+  "cpf": "888.999.000-11",
+  "convenio_id": "CON02"
+},
+{
+  "_id": {
+    "$oid": "68e44539bd84f1fe22e00526"
+  },
+  "id": "P09",
+  "nome": "Pedro",
+  "sobrenome": "Almeida",
+  "data_nascimento": {
+    "$date": "2008-07-29T00:00:00.000Z"
+  },
+  "rg": "99.999.999-9",
+  "cpf": "999.000.111-22",
+  "convenio_id": "CON03"
+},
+{
+  "_id": {
+    "$oid": "68e44539bd84f1fe22e00527"
+  },
+  "id": "P10",
+  "nome": "Quitéria",
+  "sobrenome": "Guedes",
+  "data_nascimento": {
+    "$date": {
+      "$numberLong": "-286675200000"
+    }
+  },
+  "rg": "10.000.000-0",
+  "cpf": "000.111.222-33",
+  "convenio_id": "CON01"
+},
+{
+  "_id": {
+    "$oid": "68e44539bd84f1fe22e00528"
+  },
+  "id": "P11",
+  "nome": "Ricardo",
+  "sobrenome": "Moura",
+  "data_nascimento": {
+    "$date": "1983-05-17T00:00:00.000Z"
+  },
+  "rg": "11.000.000-1",
+  "cpf": "100.200.300-40",
+  "convenio_id": "CON02"
+},
+{
+  "_id": {
+    "$oid": "68e44539bd84f1fe22e00529"
+  },
+  "id": "P12",
+  "nome": "Tânia",
+  "sobrenome": "Freitas",
+  "data_nascimento": {
+    "$date": "1991-08-25T00:00:00.000Z"
+  },
+  "rg": "12.000.000-2",
+  "cpf": "120.220.320-42",
+  "convenio_id": "CON03"
+},
+{
+  "_id": {
+    "$oid": "68e44539bd84f1fe22e0052a"
+  },
+  "id": "P13",
+  "nome": "Ubiratan",
+  "sobrenome": "Neves",
+  "data_nascimento": {
+    "$date": "1977-02-09T00:00:00.000Z"
+  },
+  "rg": "13.000.000-3",
+  "cpf": "130.230.330-43",
+  "convenio_id": "CON01"
+},
+{
+  "_id": {
+    "$oid": "68e44539bd84f1fe22e0052b"
+  },
+  "id": "P14",
+  "nome": "Viviane",
+  "sobrenome": "Zanetti",
+  "data_nascimento": {
+    "$date": "2000-11-30T00:00:00.000Z"
+  },
+  "rg": "14.000.000-4",
+  "cpf": "140.240.340-44",
+  "convenio_id": "CON02"
+},
+{
+  "_id": {
+    "$oid": "68e44539bd84f1fe22e0052c"
+  },
+  "id": "P15",
+  "nome": "Washington",
+  "sobrenome": "Xavier",
+  "data_nascimento": {
+    "$date": {
+      "$numberLong": "-203644800000"
+    }
+  },
+  "rg": "15.000.000-5",
+  "cpf": "150.250.350-45",
+  "convenio_id": "CON03"
+}]
