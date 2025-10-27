@@ -1,0 +1,160 @@
+[{
+  "_id": {
+    "$oid": "68e444fbbd84f1fe22e004f0"
+  },
+  "id": "E01",
+  "nome": "Laura",
+  "sobrenome": "Novaes",
+  "cpf": "123.456.789-01",
+  "coren": "SP010101",
+  "data_nascimento": {
+    "$date": "1985-01-01T00:00:00.000Z"
+  },
+  "contato": {
+    "telefone": "11980001001"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e444fbbd84f1fe22e004f1"
+  },
+  "id": "E02",
+  "nome": "Pedro",
+  "sobrenome": "Alves",
+  "cpf": "234.567.890-12",
+  "coren": "SP020202",
+  "data_nascimento": {
+    "$date": "1990-02-02T00:00:00.000Z"
+  },
+  "contato": {
+    "telefone": "11980001002"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e444fbbd84f1fe22e004f2"
+  },
+  "id": "E03",
+  "nome": "Virginia",
+  "sobrenome": "Santos",
+  "cpf": "345.678.901-23",
+  "coren": "RJ030303",
+  "data_nascimento": {
+    "$date": "1978-03-03T00:00:00.000Z"
+  },
+  "contato": {
+    "telefone": "21980001003"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e444fbbd84f1fe22e004f3"
+  },
+  "id": "E04",
+  "nome": "Gustavo",
+  "sobrenome": "Fonseca",
+  "cpf": "456.789.012-34",
+  "coren": "MG040404",
+  "data_nascimento": {
+    "$date": "1995-04-04T00:00:00.000Z"
+  },
+  "contato": {
+    "telefone": "31980001004"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e444fbbd84f1fe22e004f4"
+  },
+  "id": "E05",
+  "nome": "Helena",
+  "sobrenome": "Farias",
+  "cpf": "567.890.123-45",
+  "coren": "BA050505",
+  "data_nascimento": {
+    "$date": "1982-05-05T00:00:00.000Z"
+  },
+  "contato": {
+    "telefone": "71980001005"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e444fbbd84f1fe22e004f5"
+  },
+  "id": "E06",
+  "nome": "José",
+  "sobrenome": "Martins",
+  "cpf": "678.901.234-56",
+  "coren": "PR060606",
+  "data_nascimento": {
+    "$date": "1991-06-06T00:00:00.000Z"
+  },
+  "contato": {
+    "telefone": "41980001006"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e444fbbd84f1fe22e004f6"
+  },
+  "id": "E07",
+  "nome": "Sofia",
+  "sobrenome": "Sales",
+  "cpf": "789.012.345-67",
+  "coren": "RS070707",
+  "data_nascimento": {
+    "$date": "1988-07-07T00:00:00.000Z"
+  },
+  "contato": {
+    "telefone": "51980001007"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e444fbbd84f1fe22e004f7"
+  },
+  "id": "E08",
+  "nome": "Rayssa",
+  "sobrenome": "Lima",
+  "cpf": "890.123.456-78",
+  "coren": "SP080808",
+  "data_nascimento": {
+    "$date": "1975-08-08T00:00:00.000Z"
+  },
+  "contato": {
+    "telefone": "11980001008"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e444fbbd84f1fe22e004f8"
+  },
+  "id": "E09",
+  "nome": "Gabriel",
+  "sobrenome": "Souza",
+  "cpf": "901.234.567-89",
+  "coren": "SC090909",
+  "data_nascimento": {
+    "$date": "1993-11-11T00:00:00.000Z"
+  },
+  "contato": {
+    "telefone": "48980001009"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e444fbbd84f1fe22e004f9"
+  },
+  "id": "E10",
+  "nome": "Amanda",
+  "sobrenome": "Paez",
+  "cpf": "012.345.678-90",
+  "coren": "ES101010",
+  "data_nascimento": {
+    "$date": "1983-11-10T00:00:00.000Z"
+  },
+  "contato": {
+    "telefone": "27927981010"
+  }
+}]
