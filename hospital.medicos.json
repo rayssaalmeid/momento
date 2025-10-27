@@ -1,0 +1,266 @@
+[{
+  "_id": {
+    "$oid": "68e44521bd84f1fe22e00511"
+  },
+  "id": "M01",
+  "nome": "Ana",
+  "sobrenome": "Silva",
+  "data_nascimento": {
+    "$date": "1980-05-15T00:00:00.000Z"
+  },
+  "crm": "SP123456",
+  "tipo": "especialista",
+  "especialidade_id": "ESP01",
+  "contato": {
+    "telefone": "11987654321",
+    "email": "ana.silva@hospital.com"
+  },
+  "documento": {
+    "cpf": "111.111.111-11"
+  },
+  "em_atividade": true
+},
+{
+  "_id": {
+    "$oid": "68e44521bd84f1fe22e00512"
+  },
+  "id": "M02",
+  "nome": "Gabriel",
+  "sobrenome": "Santos",
+  "data_nascimento": {
+    "$date": "1975-11-20T00:00:00.000Z"
+  },
+  "crm": "RJ654321",
+  "tipo": "generalista",
+  "especialidade_id": "ESP02",
+  "contato": {
+    "telefone": "21998765432",
+    "email": "bruno.santos@hospital.com"
+  },
+  "documento": {
+    "cpf": "222.222.222-22"
+  },
+  "em_atividade": true
+},
+{
+  "_id": {
+    "$oid": "68e44521bd84f1fe22e00513"
+  },
+  "id": "M03",
+  "nome": "Carla",
+  "sobrenome": "Oliveira",
+  "data_nascimento": {
+    "$date": "1988-02-10T00:00:00.000Z"
+  },
+  "crm": "MG987654",
+  "tipo": "especialista",
+  "especialidade_id": "ESP03",
+  "contato": {
+    "telefone": "31976543210",
+    "email": "carla.oliveira@hospital.com"
+  },
+  "documento": {
+    "cpf": "333.333.333-33"
+  },
+  "em_atividade": false
+},
+{
+  "_id": {
+    "$oid": "68e44521bd84f1fe22e00514"
+  },
+  "id": "M04",
+  "nome": "Daniel",
+  "sobrenome": "Ferreira",
+  "data_nascimento": {
+    "$date": "1992-07-25T00:00:00.000Z"
+  },
+  "crm": "BA456789",
+  "tipo": "especialista",
+  "especialidade_id": "ESP04",
+  "contato": {
+    "telefone": "71965432109",
+    "email": "daniel.ferreira@hospital.com"
+  },
+  "documento": {
+    "cpf": "444.444.444-44"
+  },
+  "em_atividade": true
+},
+{
+  "_id": {
+    "$oid": "68e44521bd84f1fe22e00515"
+  },
+  "id": "M05",
+  "nome": "Erica",
+  "sobrenome": "Souza",
+  "data_nascimento": {
+    "$date": "1970-04-01T00:00:00.000Z"
+  },
+  "crm": "PR112233",
+  "tipo": "especialista",
+  "especialidade_id": "ESP05",
+  "contato": {
+    "telefone": "41954321098",
+    "email": "erica.souza@hospital.com"
+  },
+  "documento": {
+    "cpf": "555.555.555-55"
+  },
+  "em_atividade": true
+},
+{
+  "_id": {
+    "$oid": "68e44521bd84f1fe22e00516"
+  },
+  "id": "M06",
+  "nome": "Fabio",
+  "sobrenome": "Lima",
+  "data_nascimento": {
+    "$date": "1983-09-18T00:00:00.000Z"
+  },
+  "crm": "RS445566",
+  "tipo": "especialista",
+  "especialidade_id": "ESP06",
+  "contato": {
+    "telefone": "51943210987",
+    "email": "fabio.lima@hospital.com"
+  },
+  "documento": {
+    "cpf": "666.666.666-66"
+  },
+  "em_atividade": true
+},
+{
+  "_id": {
+    "$oid": "68e44521bd84f1fe22e00517"
+  },
+  "id": "M07",
+  "nome": "Giovana",
+  "sobrenome": "Melo",
+  "data_nascimento": {
+    "$date": "1995-01-05T00:00:00.000Z"
+  },
+  "crm": "SP789012",
+  "tipo": "residente",
+  "especialidade_id": "ESP07",
+  "contato": {
+    "telefone": "11932109876",
+    "email": "giovana.melo@hospital.com"
+  },
+  "documento": {
+    "cpf": "777.777.777-77"
+  },
+  "em_atividade": true
+},
+{
+  "_id": {
+    "$oid": "68e44521bd84f1fe22e00518"
+  },
+  "id": "M08",
+  "nome": "Henrique",
+  "sobrenome": "Nunes",
+  "data_nascimento": {
+    "$date": "1978-06-30T00:00:00.000Z"
+  },
+  "crm": "PE234567",
+  "tipo": "especialista",
+  "especialidade_id": "ESP08",
+  "contato": {
+    "telefone": "81921098765",
+    "email": "henrique.nunes@hospital.com"
+  },
+  "documento": {
+    "cpf": "888.888.888-88"
+  },
+  "em_atividade": true
+},
+{
+  "_id": {
+    "$oid": "68e44521bd84f1fe22e00519"
+  },
+  "id": "M09",
+  "nome": "Isabela",
+  "sobrenome": "Pires",
+  "data_nascimento": {
+    "$date": "1990-03-22T00:00:00.000Z"
+  },
+  "crm": "SC345678",
+  "tipo": "generalista",
+  "especialidade_id": "ESP02",
+  "contato": {
+    "telefone": "48910987654",
+    "email": "isabela.pires@hospital.com"
+  },
+  "documento": {
+    "cpf": "999.999.999-99"
+  },
+  "em_atividade": false
+},
+{
+  "_id": {
+    "$oid": "68e44521bd84f1fe22e0051a"
+  },
+  "id": "M10",
+  "nome": "João",
+  "sobrenome": "Rodrigues",
+  "data_nascimento": {
+    "$date": {
+      "$numberLong": "-127699200000"
+    }
+  },
+  "crm": "ES567890",
+  "tipo": "especialista",
+  "especialidade_id": "ESP01",
+  "contato": {
+    "telefone": "27909876543",
+    "email": "joao.rodrigues@hospital.com"
+  },
+  "documento": {
+    "cpf": "100.100.100-00"
+  },
+  "em_atividade": true
+},
+{
+  "_id": {
+    "$oid": "68e44521bd84f1fe22e0051b"
+  },
+  "id": "M11",
+  "nome": "Karen",
+  "sobrenome": "Costa",
+  "data_nascimento": {
+    "$date": "1985-08-08T00:00:00.000Z"
+  },
+  "crm": "AM678901",
+  "tipo": "residente",
+  "especialidade_id": "ESP03",
+  "contato": {
+    "telefone": "92998765432",
+    "email": "karen.costa@hospital.com"
+  },
+  "documento": {
+    "cpf": "110.110.110-11"
+  },
+  "em_atividade": true
+},
+{
+  "_id": {
+    "$oid": "68e44521bd84f1fe22e0051c"
+  },
+  "id": "M12",
+  "nome": "Luiz",
+  "sobrenome": "Martins",
+  "data_nascimento": {
+    "$date": "1972-10-28T00:00:00.000Z"
+  },
+  "crm": "GO789012",
+  "tipo": "especialista",
+  "especialidade_id": "ESP04",
+  "contato": {
+    "telefone": "62987654321",
+    "email": "luiz.martins@hospital.com"
+  },
+  "documento": {
+    "cpf": "120.120.120-22"
+  },
+  "em_atividade": true
+}]
