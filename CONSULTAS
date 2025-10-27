@@ -1,0 +1,78 @@
+Consultas
+1. Todos os dados e valor médio das consultas do ano de 2020 sob convênio
+db.consulta.aggregate([
+  { $match: { $and: [ { data_hora: { $gte: ISODate("2020-01-01T00:00:00Z"), $lt: ISODate("2020-12-31T00:00:00Z") } }, { convenio_id: { $ne: null } } ] } },
+  { $group: { _id: null, valor_medio: { $avg: "$valor" }, consultas: { $push: "$$ROOT" } } },
+  { $unwind: "$consultas" },
+  { $project: { _id: 0, valor_medio: 1, id: "$consultas.id", data_hora: "$consultas.data_hora", valor: "$consultas.valor", diagnostico: "$consultas.diagnostico", convenio_id: "$consultas.convenio_id" } }
+]);
+2. Internações com alta maior que a prevista
+db.internacao.find({ $expr: { $gt: ["$data_efetiva_alta", "$data_prevista_alta"] } });
+3. Primeira consulta registrada com receituário
+db.consulta.find({ receituario: { $ne: null } }, { _id: 0, receituario: 1, data_hora: 1 }).sort({ data_hora: 1 }).limit(1);
+4. Consulta de maior e menor valor sem convênio
+db.consulta.find({ convenio_id: null }).sort({ valor: -1 }).limit(1);
+db.consulta.find({ convenio_id: null }).sort({ valor: 1 }).limit(1);
+5. Internações com detalhes de quarto e valor total
+db.internacao.aggregate([
+  { $lookup: { from: "quarto", localField: "quarto_id", foreignField: "id", as: "detalhes_quarto" } },
+  { $unwind: "$detalhes_quarto" },
+  { $lookup: { from: "tipos_quarto", localField: "detalhes_quarto.tipo_id", foreignField: "id", as: "detalhes_tipo_quarto" } },
+  { $unwind: "$detalhes_tipo_quarto" },
+  { $addFields: { dias_internados: { $dateDiff: { startDate: "$data_entrada", endDate: "$data_efetiva_alta", unit: "day" } } } },
+  { $addFields: { valor_total_internacao: { $round: [{ $multiply: ["$dias_internados", "$detalhes_tipo_quarto.valor_diaria"] }, 2] } } },
+  { $project: { _id: 0, id: 1, paciente_id: 1, medico_id: 1, data_entrada: 1, data_efetiva_alta: 1, quarto_nome: "$detalhes_quarto.nome", tipo_quarto: "$detalhes_tipo_quarto.tipo", valor_diaria: "$detalhes_tipo_quarto.valor_diaria", dias_internados: 1, valor_total_internacao: 1 } }
+]);
+6. Internações em apartamentos
+db.internacao.aggregate([
+  { $lookup: { from: "quarto", localField: "quarto_id", foreignField: "id", as: "detalhes_quarto" } },
+  { $unwind: "$detalhes_quarto" },
+  { $lookup: { from: "tipos_quarto", localField: "detalhes_quarto.tipo_id", foreignField: "id", as: "tipo" } },
+  { $unwind: "$tipo" },
+  { $match: { "tipo.tipo": "apartamento" } },
+  { $project: { _id: 0, data_entrada: 1, procedimento: { $literal: "Internação em Apartamento" }, numero_quarto: "$detalhes_quarto.nome" } }
+]);
+7. Pacientes menores de 18 anos em consultas não pediátricas
+db.consulta.aggregate([
+  { $lookup: { from: "paciente", localField: "paciente_id", foreignField: "id", as: "paciente" } },
+  { $unwind: "$paciente" },
+  { $lookup: { from: "medico", localField: "medico_id", foreignField: "id", as: "medico" } },
+  { $unwind: "$medico" },
+  { $lookup: { from: "especialidade", localField: "medico.especialidade_id", foreignField: "id", as: "especialidade" } },
+  { $unwind: "$especialidade" },
+  { $addFields: { idade_na_consulta: { $dateDiff: { startDate: "$paciente.data_nascimento", endDate: "$data_hora", unit: "year" } } } },
+  { $match: { $and: [ { idade_na_consulta: { $lt: 18 } }, { "especialidade.nome": { $ne: "pediatria" } } ] } },
+  { $sort: { data_hora: 1 } },
+  { $project: { _id: 0, paciente: { $concat: ["$paciente.nome", " ", "$paciente.sobrenome"] }, data_da_consulta: "$data_hora", especialidade: "$especialidade.nome" } }
+]);
+8. Internações em enfermaria com gastroenterologia
+db.internacao.aggregate([
+  { $lookup: { from: "paciente", localField: "paciente_id", foreignField: "id", as: "paciente" } },
+  { $unwind: "$paciente" },
+  { $lookup: { from: "medico", localField: "medico_id", foreignField: "id", as: "medico" } },
+  { $unwind: "$medico" },
+  { $lookup: { from: "especialidade", localField: "medico.especialidade_id", foreignField: "id", as: "especialidade" } },
+  { $unwind: "$especialidade" },
+  { $lookup: { from: "quarto", localField: "quarto_id", foreignField: "id", as: "quarto" } },
+  { $unwind: "$quarto" },
+  { $lookup: { from: "tipos_quarto", localField: "quarto.tipo_id", foreignField: "id", as: "tipo_quarto" } },
+  { $unwind: "$tipo_quarto" },
+  { $match: { $and: [ { "especialidade.nome": "gastroenterologia" }, { "tipo_quarto.tipo": "enfermaria" } ] } },
+  { $project: { _id: 0, paciente: { $concat: ["$paciente.nome", " ", "$paciente.sobrenome"] }, medico: { $concat: ["$medico.nome", " ", "$medico.sobrenome"] }, data_internacao: "$data_entrada", procedimento: { $literal: "Internação/Tratamento Gastroenterológico em Enfermaria" }, quarto: "$quarto.nome", tipo: "$tipo_quarto.tipo" } }
+]);
+9. Médicos e quantidade de consultas realizadas
+db.medico.aggregate([
+  { $lookup: { from: "consulta", localField: "id", foreignField: "medico_id", as: "consultas_realizadas" } },
+  { $addFields: { quantidade_consultas: { $size: "$consultas_realizadas" } } },
+  { $project: { _id: 0, nome: { $concat: ["$nome", " ", "$sobrenome"] }, crm: "$crm", quantidade_consultas: 1 } },
+  { $sort: { quantidade_consultas: -1 } }
+]);
+10. Médicos com "Gabriel" no nome
+db.medicos.find({ nome: /Gabriel/i });
+11. Enfermeiros com mais de uma internação
+db.enfermeiro.aggregate([
+  { $lookup: { from: "internacao", localField: "id", foreignField: "enfermeiros_ids", as: "internacoes_participadas" } },
+  { $addFields: { numero_de_internacoes: { $size: "$internacoes_participadas" } } },
+  { $match: { numero_de_internacoes: { $gt: 1 } } },
+  { $project: { _id: 0, nome: { $concat: ["$nome", " ", "$sobrenome"] }, coren: "$coren", numero_de_internacoes: 1 } }
+]);
